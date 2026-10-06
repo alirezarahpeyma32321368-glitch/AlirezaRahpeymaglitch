@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+  }
+  body {
+    @apply bg-dark-950 text-white font-sans antialiased;
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-fire-red px-6 py-3 font-bold text-white transition-all duration-300 hover:bg-fire-red-dark hover:shadow-[0_0_25px_rgba(255,59,48,0.4)] active:scale-95;
+  }
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-white/30 px-6 py-3 font-bold text-white transition-all duration-300 hover:border-white hover:bg-white/10 active:scale-95;
+  }
+  .section-padding {
+    @apply px-5 py-16 sm:px-8 md:py-24 lg:px-12;
+  }
+  .container-max {
+    @apply mx-auto max-w-7xl;
+  }
+  .card-dark {
+    @apply rounded-3xl border border-white/5 bg-dark-800 transition-all duration-500;
+  }
+  .input-dark {
+    @apply w-full rounded-xl border border-white/10 bg-dark-700 px-4 py-3 text-white placeholder-gray transition-colors focus:border-fire-red focus:outline-none;
+  }
+}
+
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0B0B;
+}
+::-webkit-scrollbar-thumb {
+  background: #FF3B30;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E02E24;
+}
+
+/* Hide scrollbar for horizontal scroll */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Text gradient */
+.text-gradient-fire {
+  background: linear-gradient(135deg, #FF3B30, #FF6A00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glow effect */
+.glow-red {
+  box-shadow: 0 0 60px rgba(255, 59, 48, 0.15);
+}
