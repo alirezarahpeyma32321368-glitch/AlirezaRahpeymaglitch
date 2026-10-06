@@ -13,7 +13,7 @@ export default function WhyChooseUs() {
     <section className="section-padding">
       <div className="container-max">
         <Reveal className="mb-10 text-center">
-          <h2 className="text-3xl font-black sm:text-4xl">چرا فایر برگر؟</h2>
+          <h2 className="text-3xl font-black sm:text-4xl">چرا MERCADO FASTFOOD؟</h2>
         </Reveal>
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {features.map((f, i) => (

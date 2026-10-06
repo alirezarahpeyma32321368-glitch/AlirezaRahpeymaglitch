@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
-import { Search, ShoppingBag, Menu, X, Flame } from 'lucide-react';
+import { Search, ShoppingBag, Menu, X } from 'lucide-react';
+
+const LOGO_URL = 'https://media.base44.com/images/public/6ac55b7d1207d4ba495cf109/b7bc3765e_ChatGPTImage__.png';
 import { useCart } from '../context/CartContext';
 
 const navItems = [
@@ -55,11 +57,8 @@ export default function Header({ onCartClick }) {
       >
         <nav className="container-max flex h-16 items-center justify-between px-5 md:h-20 md:px-8">
           {/* Logo */}
-          <button onClick={() => scrollTo('home')} className="flex items-center gap-2">
-            <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-fire-red/15 text-fire-red">
-              <Flame size={22} fill="currentColor" />
-            </span>
-            <span className="text-lg font-extrabold tracking-tight md:text-xl">فایر برگر</span>
+          <button onClick={() => scrollTo('home')} className="flex items-center">
+            <img src={LOGO_URL} alt="MERCADO FASTFOOD" className="h-11 rounded-xl bg-white p-1" />
           </button>
 
           {/* Desktop Nav */}
@@ -131,12 +130,7 @@ export default function Header({ onCartClick }) {
           }`}
         >
           <div className="flex items-center justify-between">
-            <span className="flex items-center gap-2">
-              <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-fire-red/15 text-fire-red">
-                <Flame size={22} fill="currentColor" />
-              </span>
-              <span className="text-lg font-extrabold">فایر برگر</span>
-            </span>
+            <img src={LOGO_URL} alt="MERCADO FASTFOOD" className="h-11 rounded-xl bg-white p-1" />
             <button
               onClick={() => setMobileOpen(false)}
               className="flex h-9 w-9 items-center justify-center rounded-full text-gray hover:bg-white/10"

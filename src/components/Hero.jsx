@@ -16,7 +16,7 @@ export default function Hero() {
         <div className="order-2 text-center md:order-1 md:text-right">
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-fire-red/30 bg-fire-red/10 px-4 py-1.5 text-sm font-medium text-fire-red">
             <Flame size={16} fill="currentColor" />
-            <span>طعم آتشین فایر برگر</span>
+            <span>طعم آتشین MERCADO FASTFOOD</span>
           </div>
           <h1 className="text-4xl font-black leading-tight sm:text-5xl lg:text-6xl">
             طعم آتشین،
@@ -46,7 +46,7 @@ export default function Hero() {
             <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-fire-red/30 via-fire-orange/15 to-transparent blur-2xl" />
             <img
               src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=1000&q=85&auto=format&fit=crop"
-              alt="برگر ویژه فایر برگر"
+              alt="برگر ویژه MERCADO FASTFOOD"
               className="relative z-10 h-full w-full rounded-full object-cover shadow-2xl"
               loading="eager"
             />

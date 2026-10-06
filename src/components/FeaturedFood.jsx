@@ -12,7 +12,7 @@ export default function FeaturedFood() {
           <div className="relative overflow-hidden rounded-3xl">
             <img
               src="https://images.unsplash.com/photo-1513104890138-7e7491c4e45e?w=1000&q=85&auto=format&fit=crop"
-              alt="پیتزای مخصوص فایر برگر"
+              alt="پیتزای مخصوص MERCADO FASTFOOD"
               className="aspect-[4/3] w-full object-cover transition-transform duration-700 hover:scale-105"
               loading="lazy"
             />

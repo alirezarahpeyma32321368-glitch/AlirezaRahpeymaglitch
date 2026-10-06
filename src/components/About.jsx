@@ -13,7 +13,7 @@ export default function About() {
         <Reveal className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-black sm:text-4xl">داستان ما</h2>
           <p className="mt-5 text-sm leading-8 text-gray md:text-base">
-            فایر برگر با یک هدف ساده شروع شد؛ اینکه یک غذای سریع، فقط سریع نباشد، بلکه خوش‌طعم، تازه و باکیفیت باشد.
+            MERCADO FASTFOOD با یک هدف ساده شروع شد؛ اینکه یک غذای سریع، فقط سریع نباشد، بلکه خوش‌طعم، تازه و باکیفیت باشد.
           </p>
         </Reveal>
         <div className="mt-12 grid gap-5 sm:grid-cols-3">

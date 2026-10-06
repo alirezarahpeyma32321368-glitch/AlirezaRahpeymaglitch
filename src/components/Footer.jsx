@@ -1,4 +1,6 @@
-import { Flame, Instagram, Send, MessageCircle } from 'lucide-react';
+import { Instagram, Send, MessageCircle } from 'lucide-react';
+
+const LOGO_URL = 'https://media.base44.com/images/public/6ac55b7d1207d4ba495cf109/b7bc3765e_ChatGPTImage__.png';
 
 const columns = [
   {
@@ -30,12 +32,7 @@ export default function Footer() {
         <div className="grid gap-8 md:grid-cols-4">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-2">
-              <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-fire-red/15 text-fire-red">
-                <Flame size={22} fill="currentColor" />
-              </span>
-              <span className="text-lg font-extrabold">فایر برگر</span>
-            </div>
+            <img src={LOGO_URL} alt="MERCADO FASTFOOD" className="h-12 rounded-xl bg-white p-1" />
             <p className="mt-3 text-sm text-gray">طعم واقعی، یک گاز تا هیجان</p>
             <div className="mt-5 flex gap-2">
               {socials.map((s) => (
@@ -74,7 +71,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 border-t border-white/10 pt-6 text-center">
-          <p className="text-xs text-gray">© ۱۴۰۵ فایر برگر - تمامی حقوق محفوظ است.</p>
+          <p className="text-xs text-gray">© ۱۴۰۵ MERCADO FASTFOOD - تمامی حقوق محفوظ است.</p>
         </div>
       </div>
     </footer>

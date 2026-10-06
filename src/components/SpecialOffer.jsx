@@ -11,7 +11,7 @@ export default function SpecialOffer() {
           <div className="relative overflow-hidden rounded-3xl border border-fire-red/20">
             <img
               src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=1400&q=85&auto=format&fit=crop"
-              alt="پیشنهاد ویژه فایر برگر"
+              alt="پیشنهاد ویژه MERCADO FASTFOOD"
               className="absolute inset-0 h-full w-full object-cover"
               loading="lazy"
             />
